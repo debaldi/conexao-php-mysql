@@ -11,14 +11,15 @@ try {
 	
 	$pdo = conexaoDB();
 	
-	$pesquisa = $pdo->prepare('SELECT * FROM nometabela');	// Informe o nome da tabela em nometabela
+	$pesquisa = $pdo->prepare('SELECT * FROM carros');	// Seleciona todos os dados da tabela carros
 	$pesquisa->execute();
 	
 	$dados = $pesquisa->fetchAll(PDO::FETCH_ASSOC);
 		
 		if($pesquisa->rowCount() >= 1):
 			foreach($dados as $d):
-				echo $d["nomecampo"] . "<br>";				// Informe o nome do campo da tabela em nomecampo
+				echo $d["id"] . " - ";					// id do carro cadastrado na tabela
+				echo $d["nome"] . "<br>";				// nome do carro cadastrado na tabela
 			endforeach;
 		endif;
 	
