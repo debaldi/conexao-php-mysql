@@ -1,12 +1,12 @@
 ### Conexão em PHP com Mysql
 
-####⚠️ Recomendo antes de tudo, rodar o xampp e dar start em Apache e MySQL. 
+⚠️ ####Recomendo antes de tudo, rodar o xampp e dar start em Apache e MySQL. 
 
 #### importe o arquivo listar.sql no MySql ou crie você mesmo o banco de dados.
 
 ### Criando Banco de Dados MySQL:
-####✔️ 1 - Crie um Bando de dados com o nome listar e Collation: utf8_unicode_ci.
-####✔️ 2 - Crie uma tabela com dois campos:
+✔️####1 - Crie um Bando de dados com o nome listar e Collation: utf8_unicode_ci.
+✔️#### 2 - Crie uma tabela com dois campos:
 ####      Primeiro campos com o nome id -> auto increment -> tipo int.
 ####      Segundo campo com o nome carros-> tamanho 50 -> tipo varchar.
 
